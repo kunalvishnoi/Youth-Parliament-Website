@@ -41,9 +41,12 @@
       </div>
     </nav>
     <section id="home">
-      
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
     </section>
-    
     <section id="insight" class="">
       <div class="container-fluid text-center">
         <h3 class="section-heading">About</h3>
@@ -61,33 +64,7 @@
     <section id="products" class="">
       <div class="container-fluid">
         <h3 class="text-center section-heading">OUR PRODUCT SUITE</h3>
-        <!--
-        <div class="row">
-          <div class="col-sm-6">
-            <h4 class="text-center product-heading">User Engagement Platform</h4>
-            <img src="./assets/images/sms-1.jpg" alt="" class="img-responsive img-rounded  center-block">
-            <div class="vertical-align">
-              <p id="product-left-p">Empowering brands to send targeted and personalized message at right time.</p>
-              <ul>
-                <li>
-                  <p>Use notifications to send timely and targeted SMS messages that surprise and delight your customers</p>
-                </li>
-                <li>
-                  <p>Understand communication consumption behavior to optimize SMS marketing spends</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h4 class="text-center product-heading">WhatsApp’s Restaurant Ad Ticker</h4>
-            <img src="./assets/images/whatsapp-1.jpg" alt="" class="img-responsive img-rounded  center-block">
-            <div class="vertical-align">
-              <p class="">Engage your customers without spamming them, in an entirely new way of communicating via one of the most accepted 1:1 mobile communication platforms.</p>
-              <p class="">Enhances brand visibility, image and customer engagement while opening an avenue for an economical mode of communication</p>
-            </div>
-          </div>
-        </div>
-        -->
+       
         <div class=" text-center">
           
           <img src="./assets/images/sms-1.jpg" alt="" class="img-responsive img-rounded  center-block">
@@ -322,6 +299,16 @@
         <br><br>
         <p>&copy; Youth Parliament 2018</p>
       </section>
+        <script>
+      $(document).ready(function() {
+      
+      // Fakes the loading setting a timeout
+      setTimeout(function() {
+      $('body').addClass('loaded');
+      }, 3500);
+      
+      });
+      </script>
       <script src="./assets/scripts/script.js"></script>
-      </body>
+    </body>
   </html>
