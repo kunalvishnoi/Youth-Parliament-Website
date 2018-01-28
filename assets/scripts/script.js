@@ -23,22 +23,7 @@ function smoothScroll(e){
         });
 }
 
-$("#contact-form").on('submit',function(e){
-  e.preventDefault();
-  const inputs = $("#contact-form :input");
-  let values={};
-  inputs.each(function() {
-    values[this.name] = this.value;
-  });
-  
-  $.post(' https://us-central1-rightcust-website.cloudfunctions.net/sendEmail',
-          values,
-          (data)=>{
-              console.log('done');
-              $("#contact-form").reset();
-          },
-          'application/json');
-});
+
 
 
 $("#myNavbar a").on('click',smoothScroll);

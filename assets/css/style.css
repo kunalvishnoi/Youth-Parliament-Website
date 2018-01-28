@@ -229,27 +229,15 @@ font-size: 24px;
 font-size: 18px;
 }
 #insight{
-background-image:  url('../images/one.jpg') ;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+
+
 padding-top: 50px;
-color: #c9d6dc;
+color: black;
 }
 #products{
 padding-top: 50px;
 min-height: 80vh;
 background:rgba(15, 81, 82, 0.23);
-}
-#whyus{
-padding-top: 30px;
-background:#0f5152;
-color: #f2f2f3;
-}
-#whyus .section-heading{
-padding-bottom: 0;
-margin-top: 40px;
-margin-bottom: 10px;
 }
 #reviews{
 padding-top: 50px;
@@ -287,10 +275,6 @@ text-align:left;
 }
 .navbar-toggle .icon-bar {
 background: black;
-}
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
-line-height: 1;
-min-height: 100vh;
 }
 .row{
 margin-right: 0px;
@@ -433,3 +417,32 @@ margin-right: 0px;
   transition: all 0.3s 1s ease-out;
 }
 /* -------------------------------------------------------- */
+.contact input{
+display: block;
+margin: 20px;
+padding: 10px;
+min-width: 300px;
+background: white;
+border:0;
+border-bottom: 1px solid black;
+transition: all 0.3s;
+color: black;
+font-size: 15px;
+margin-left: 0;
+}
+.contact input:focus{
+transform: scale(1.1);
+outline-color: white;
+outline-style: none;
+
+}
+.contact button{
+text-align: center;
+margin: 10px auto;
+min-width: 100px;
+border-radius: 5px;
+background: white;
+border: 1px solid black;
+color: black;
+min-height: 30px;
+}
