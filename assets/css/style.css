@@ -159,7 +159,8 @@ color: white;
 height:  768px;
 }
 #schedule{
-background: linear-gradient(to right,#5C258D,#4389A2);
+/*background: linear-gradient(to right,#5C258D,#4389A2); */
+background-color: black;
 color: white;
 padding-top: 50px;
 padding-top: 50px;
@@ -239,9 +240,6 @@ background:rgba(15, 81, 82, 0.23);
 }
 #reviews{
 padding-top: 50px;
-min-height: 70vh;
-color: #fff;
-background-color: black;
 }
 #contact{
 padding-bottom: 0!important;
