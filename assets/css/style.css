@@ -73,33 +73,10 @@ section:focus{
 outline: none;
 }
 .navbar-nav>.active>a{
-border-bottom:3px solid #5d85c6;
+border-bottom:3px solid #101e35;
 }
-.insight-icons{
-min-height: 100px;
-min-width: 100px;
-}
-.insight-div{
-margin-bottom: 20px;
-}
-.contact input{
-display: block;
-margin: 20px;
-padding: 10px;
-min-width: 300px;
-background: white;
-border:0;
-border-bottom: 1px solid black;
-transition: all 0.3s;
-color: black;
-font-size: 15px;
-margin-left: 0;
-}
-.contact input:focus{
-transform: scale(1.1);
-outline-color: white;
-outline-style: none;
-
+.sub-head-speakers {
+    color: #101e35;
 }
 .contact button{
 text-align: center;
@@ -132,36 +109,8 @@ margin-bottom: 30px;
 .vertical-align{
 padding-top: 20px;
 }
-#product-left-p{
 
-}
-.whyus-heading{
-margin:30px 0;
-font-size: 24px;
-font-weight: 400;
-}
-.whyus-icon-div{
-padding-top: 10px;
-}
-.whyus-icon-div h4{
-font-weight: 200;
-}
-.whyus-icons{
-min-height: 100px;
-min-width: 100px;
-}
-.whyus-container{
-margin: 10px 0;
-}
-/*.review-heading{
-margin-bottom: 20px;
-}
-.product-heading{
-margin-bottom: 20px;
-}
-.contact-heading{
-margin-bottom: 20px;
-}*/
+
 .section-heading{
 margin-bottom: 30px;
 padding-bottom: 20px;
@@ -193,7 +142,7 @@ text-decoration: none;
 color: white;
 }
 .nav>li>a:focus, .nav>li>a:hover{
-color: #1ab394;
+color: #101e35;
 background-color:transparent;
 }
 .nav-small a{
@@ -246,9 +195,7 @@ font-size: 22px!important;
 }
 #team{
 padding-top: 50px;
-padding-left: 3%;
-padding-right: 3%;
-background:rgba(6, 10, 10, 0.09);
+
 }
 
 #insight{
@@ -257,12 +204,13 @@ background:rgba(6, 10, 10, 0.09);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-background-color:#5d85c6;
+background-color:#101e35;
 padding-top: 50px;
 color: #fff;
 padding-left: 3%;
 padding-right: 3%;
 border: 5px solid #fff;
+min-height: 90vh;
 }
 #particle-canvas {
     width: 100%;
@@ -283,9 +231,8 @@ color: white;
 padding-top: 50px;
 padding-top: 50px;
 }
-#reviews{
+#speakers{
 padding-top: 50px;
-background:rgba(6, 10, 10, 0.09);
 }
 #contact{
 min-height: 90vh;
@@ -313,7 +260,7 @@ Multicoloured Hover Variations
 left: 0;
 bottom: 0;
 width: 100%;
-background-color: #5d85c6;
+background-color: #101e35;
 color: black;
 text-align: center;
 padding: 10px 0;
@@ -355,4 +302,249 @@ text-align:left;
 .row{
 
   margin-right: 0px;
+}
+
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+.bounceIn.go { 
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+}
+
+/****************
+* bounceInRight *
+****************/
+
+@-webkit-keyframes bounceInRight { 
+    0% { 
+        opacity: 0; 
+        
+        -webkit-transform: translateX(400px); 
+    } 
+    60% { 
+        
+        -webkit-transform: translateX(-30px); 
+    } 
+    80% { 
+        -webkit-transform: translateX(10px); 
+    } 
+    100% {
+    opacity: 1;
+     
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes bounceInRight { 
+    0% { 
+        opacity: 0; 
+        
+        transform: translateX(400px); 
+    } 
+    60% { 
+        
+        transform: translateX(-30px); 
+    } 
+    80% { 
+        transform: translateX(10px); 
+    } 
+    100% {
+    opacity: 1;
+     
+        transform: translateX(0); 
+    } 
+} 
+
+
+.bounceInRight.go { 
+    -webkit-animation-name: bounceInRight; 
+    animation-name: bounceInRight; 
+}
+
+/******************
+* Bounce in left *
+*******************/
+
+@-webkit-keyframes bounceInLeft { 
+    0% { 
+        opacity: 0; 
+        
+        -webkit-transform: translateX(-400px); 
+    } 
+    60% { 
+       
+        -webkit-transform: translateX(30px); 
+    } 
+    80% { 
+        -webkit-transform: translateX(-10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes bounceInLeft { 
+    0% { 
+        opacity: 0; 
+        
+        transform: translateX(-400px); 
+    } 
+    60% { 
+       
+        transform: translateX(30px); 
+    } 
+    80% { 
+        transform: translateX(-10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        transform: translateX(0); 
+    } 
+} 
+
+.bounceInLeft.go { 
+    -webkit-animation-name: bounceInLeft; 
+    animation-name: bounceInLeft; 
+}
+
+/******************
+* Bounce in up *
+*******************/
+
+@-webkit-keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        
+        -webkit-transform: translateY(400px); 
+    } 
+    60% { 
+       
+        -webkit-transform: translateY(-30px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        
+        transform: translateY(400px); 
+    } 
+    60% { 
+       
+        transform: translateY(-30px); 
+    } 
+    80% { 
+        transform: translateY(10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInUp.go { 
+    -webkit-animation-name: bounceInUp; 
+    animation-name: bounceInUp; 
+}
+
+
+/******************
+* Bounce in down *
+*******************/
+
+@-webkit-keyframes bounceInDown { 
+    0% { 
+        opacity: 0; 
+        
+        -webkit-transform: translateY(-400px); 
+    } 
+    60% { 
+       
+        -webkit-transform: translateY(30px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(-10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInDown { 
+    0% { 
+        opacity: 0; 
+        
+        transform: translateY(-400px); 
+    } 
+    60% { 
+       
+        transform: translateY(30px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% {
+        opacity: 1;
+         
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInDown.go { 
+    -webkit-animation-name: bounceInDown; 
+    animation-name: bounceInDown; 
+}
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.fadeInUp{ 
+    opacity: 0; 
+    -webkit-transform: translateY(400px); 
+    transform: translateY(400px);
+}
+.fadeInUp.go { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
 }
